@@ -4,18 +4,7 @@
 from random import randint as rnd
 
 rnd_list = [rnd(1, 500) for i in range(10)]
-print(rnd_list)
+print(rnd_list)  # show random list compared to the resulted one
 
-
-def my_sort(my_list):
-    new_list = []
-    n = 0
-    while n < len(my_list)-1:
-        if my_list[n + 1] > my_list[n]:
-            new_list.append(my_list[n + 1])
-        n += 1
-    return new_list
-
-
-my_list = my_sort(rnd_list)
-print(my_list)
+new_list = [rnd_list[i] for i in range(1, len(rnd_list)) if rnd_list[i] > rnd_list[i-1]]
+print(new_list)
