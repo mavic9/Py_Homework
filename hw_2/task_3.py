@@ -8,9 +8,8 @@ seasons = {'зима': [1, 2, 12], 'весна': [3, 4, 5], 'лето': [6, 7, 8
 
 if 0 < a < 13:
     for key, value in seasons.items():
-        for i in value:
-            if i == a:
-                print(f'Сезон года - {key}')
-                break
+        if a in value:
+            print(f'Сезон года - {key}')
+            break
 else:
     print('Месяц введен некоректно!')
