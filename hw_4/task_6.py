@@ -1,3 +1,6 @@
+# Author: Viktor Mamontov
+# Script for generation of lists using itertools
+
 from itertools import count, cycle
 
 n = 50
