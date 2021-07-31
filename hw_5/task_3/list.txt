@@ -1,0 +1,7 @@
+Petrov;10000
+Ivanov;40000
+Sidorov;30000
+Alekseev;25000
+Sikorsky;30000
+Godunov;15000
+Popov;18000
