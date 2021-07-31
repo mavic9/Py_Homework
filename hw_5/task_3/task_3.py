@@ -12,3 +12,4 @@ for line in my_file:
     n += 1
 
 print(f'Mean salary is {sum/n}')
+my_file.close()
