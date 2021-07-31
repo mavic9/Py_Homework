@@ -1,5 +1,5 @@
 # Author: Viktor Mamontov
-# Script for counting of salary from a file
+# Script for counting salary from a file
 
 my_file = open('list.txt')
 n = 0
