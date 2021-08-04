@@ -1,4 +1,5 @@
-
+# Author: Victor Mamontov
+# Make class TrafficLight
 
 class TrafficLight:
 
