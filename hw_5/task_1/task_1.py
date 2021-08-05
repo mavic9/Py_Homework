@@ -5,18 +5,17 @@ def file_gen(new_file):
     phrase = input("Enter your phrase: ")
     phrase_list = [phrase + '\n']
     my_stop = False
-    new_obj = open(new_file, 'w')
-    if phrase != '':
-        while not my_stop:
-            new_phrase = input('Enter your phrase (or press Enter to stop) : ')
-            if new_phrase != '':
-                phrase_list.append(new_phrase + '\n')
-            else:
-                my_stop = True
-        new_obj.writelines(phrase_list)
-        new_obj.close()
-    else:
-        print('No message in your phrase!')
+    with open('new_file', 'w') as new_obj:
+        if phrase != '':
+            while not my_stop:
+                new_phrase = input('Enter your phrase (or press Enter to stop) : ')
+                if new_phrase != '':
+                    phrase_list.append(new_phrase + '\n')
+                else:
+                    my_stop = True
+            new_obj.writelines(phrase_list)
+        else:
+            print('No message in your phrase!')
     print('New file is written!')
     return
 
