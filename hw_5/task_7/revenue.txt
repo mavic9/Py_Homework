@@ -1,0 +1,4 @@
+Cobalt_Industry public 20000 5000
+New_Way private 10000 15000
+Company_1 private 15000 5000
+CashFlow public 20000 8000
