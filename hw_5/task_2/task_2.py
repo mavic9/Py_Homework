@@ -9,6 +9,7 @@ def txt_count(filename):
         w = line.split(' ')
         world_count += len(w)
         line_count += 1
+    f.closed()
     return line_count, world_count
 
 
