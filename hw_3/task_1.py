@@ -1,12 +1,10 @@
 # Author: Viktor Mamontov
 # Создание функции для деления чисел
 
-def my_div():
+def my_div(a, b):
     """
     :return division of two numbers
     """
-    a = int(input("Введите делимое: "))
-    b = int(input('Введите делитель: '))
     if b != 0:
         c = a / b
     else:
@@ -14,5 +12,7 @@ def my_div():
     return c
 
 
-your_div = my_div()
+a = int(input("Введите делимое: "))
+b = int(input('Введите делитель: '))
+your_div = my_div(a,b)
 print(your_div)
