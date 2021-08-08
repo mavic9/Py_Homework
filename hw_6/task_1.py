@@ -1,12 +1,12 @@
 # Author: Victor Mamontov
 # Make class TrafficLight
+import time
+
 
 class TrafficLight:
-
     __color = ('Red', 'Yellow', 'Green')
 
     def running(self):
-        import time
         if TrafficLight.__color[0] == 'Red' and TrafficLight.__color[1] == 'Yellow' and TrafficLight.__color[2] == 'Green':
             k = 0
             while k < 10:
