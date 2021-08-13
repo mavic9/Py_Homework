@@ -5,7 +5,7 @@ def file_gen(new_file):
     phrase = input("Enter your phrase: ")
     phrase_list = [phrase + '\n']
     my_stop = False
-    with open(new_file, 'w') as new_obj:
+    with open('new_file', 'w') as new_obj:
         if phrase != '':
             while not my_stop:
                 new_phrase = input('Enter your phrase (or press Enter to stop) : ')
