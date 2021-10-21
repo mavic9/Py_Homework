@@ -1,4 +1,4 @@
-# def for sin calculation
+# def for calculation of sin
 import math
 
 def calc_sin(a):
